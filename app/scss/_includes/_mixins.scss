@@ -5,6 +5,10 @@
 	vertical-align: top;
 }
 
+@mixin Raleway{
+	font-family: ralewaymedium, serif;
+}
+
 @mixin clearfix {
 	&:before, &:after {content: " "; display: table;}
 	&:after {clear: both;}

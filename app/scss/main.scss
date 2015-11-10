@@ -4,18 +4,20 @@
 
 /* --------- mixins --------- */
 
-@import "_includes/mixins";
+@import "_includes/_mixins";
 
 /* --------- variables --------- */
 
-@import "_includes/variables";
+@import "_includes/_variables";
 
 /* --------- fonts --------- */
 
-@import "_includes/fonts";
+@import "_includes/_fonts";
 
 /* --------- fonts --------- */
 
 @import "_includes/default";
 
 /* --------- sections --------- */
+
+@import "common/header";
