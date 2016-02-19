@@ -1,0 +1,5 @@
+.about{
+  padding: $padding-block;
+  text-align: center;
+}
+

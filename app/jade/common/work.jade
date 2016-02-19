@@ -1,0 +1,10 @@
+.work
+    .container
+        p.title__question
+            | Who we Are
+        h2.title
+            | Show Your Amazing Work
+    .work--gellary
+        - for (var i = 1; i <= 8; i++)
+            .work--gellary--img
+                img(src="/img/work__img__#{i}.png")

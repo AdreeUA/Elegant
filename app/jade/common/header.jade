@@ -1,35 +1,14 @@
 header.header
-    nav.nav
-        .container.clearfix
-            .main-logo
-                a(href="#").main-logo__link.clearfix
-                    img(src="/img/logo.png").main-logo__img
-                    span.main-logo__title Expire
-
-
-            -var items = ["HOME", "PORTFOLIO", "BLOG", "PAGES", "ABOUT US", "CONTACT"]
-                ul.nav__list
-                    each item in items
-                        li(class="nav__item nav__item" + ((item == "HOME")? '--active': ''))
-                            a(href="#" class="nav__link nav__link" + ((item == "HOME")? '--active': ''))= item
-
-    .slider
-        .container
-            .slider__wrapper
-                ul.slider__list
-                    - for (var i = 0; i < 3; i++)
-                        li(class="slider__item slider__item" + ((i == 0 )? '--active': ''))
-                            img(src="//lorempixel.com/1440/780/").slider__img
-                            .slider__discription
-                                .slider__discription--title
-                                    | Expire
-                                .slider__discription--text
-                                    | Professionaly designed, carefully made for your enjoyement
-                                .slider__button--wrapper
-                                    a(href="#").slider__button--link
-                                        button.slider__button.slider__button--explore.btn EXPLORE
-                                    a(href="#").slider__button--link
-                                        button.slider__button.slider__button--more.btn LEARN MORE
-                ul.slider__pagin--list
-                    - for (var i = 0; i < 3; i++)
-                        li(class="slider__pagin--item slider__pagin--item" + ((i == 0 )? '--active': ''))
+    .logo
+        a(href="index.html").logo--link
+    nav.navbar
+        .navbar--menu#menu Menu
+            a(href="#menu").navbar--menu__link
+                span.navbar--menu__toggle
+        ul.navbar--list
+            - var menuItem = {'index': "Home", 'about': "About", 'work': "Work", 'blog': "Blog", 'contact': "Contact"}
+            each key, val in menuItem
+                li.navbar--item
+                    a(href="#{key}.html") #{val}
+    h1.header--title
+        | Say <i>Haloa</i> to your Portfolio

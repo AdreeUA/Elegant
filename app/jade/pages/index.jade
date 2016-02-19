@@ -1,11 +1,15 @@
 ﻿extends ../layouts/main_layout
 
 block title
-	title Main Page
+	title Main Page | Elegant
 
 block content
 	.wrapper
-		.main-content
-
-
-				include ../common/header
+		include ../common/header
+		.container
+			include ../common/about
+		include ../common/work
+		.container
+			include ../common/team
+			include ../common/blog
+			include ../common/contact
