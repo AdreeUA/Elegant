@@ -9,6 +9,6 @@ header.header
             - var menuItem = {'index': "Home", 'about': "About", 'work': "Work", 'blog': "Blog", 'contact': "Contact"}
             each key, val in menuItem
                 li.navbar--item
-                    a(href="#{key}.html") #{val}
+                    a(href="#{val}.html").navbar--link #{key}
     h1.header--title
         | Say <i>Haloa</i> to your Portfolio

@@ -519,6 +519,9 @@ body {
   border: 1px solid black;
   background-color: transparent; }
 
+.btn:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); }
+
 .title {
   margin: 0 0 53px 0;
   text-align: center;
@@ -576,8 +579,7 @@ body {
   display: block;
   width: 190px;
   height: 42px;
-  background: url(../../img/logo.png) 0 0 no-repeat;
-  background-size: cover; }
+  background: url(../../img/logo.png) 0 0 no-repeat; }
 
 .navbar {
   float: right; }
@@ -588,22 +590,23 @@ body {
   position: relative;
   color: white;
   font-size: 16px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: right; }
 
 .navbar--menu__link {
   display: inline-block;
   vertical-align: top;
   margin-left: 2px;
   width: 18px;
-  height: 12px;
-  position: relative; }
+  height: 12px; }
 
 .navbar--menu__toggle, .navbar--menu__toggle:before,
 .navbar--menu__toggle:after {
-  position: absolute;
+  position: relative;
+  display: block;
   width: 18px;
   height: 2px;
-  top: 9px;
+  top: 7px;
   right: 0;
   background-color: #fff; }
 
@@ -616,10 +619,38 @@ body {
 
 
 .navbar--menu__toggle:after {
-  top: 5px; }
+  top: 3px; }
 
 .navbar--list {
-  display: none; }
+  display: none;
+  position: absolute;
+  top: 55px;
+  right: 0;
+  width: 200px;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.7);
+  list-style-type: none; }
+
+.navbar--list:before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  left: 90px;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-bottom-color: rgba(255, 255, 255, 0.7); }
+
+.navbar--link {
+  text-align: center;
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+  color: #021725;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent; }
 
 .header--title {
   margin: 0;
