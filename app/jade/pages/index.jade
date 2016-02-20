@@ -1,15 +1,118 @@
-﻿extends ../layouts/main_layout
+﻿- var pageId = 0
+extends ../layouts/main_layout
 
 block title
 	title Main Page | Elegant
 
 block content
-	.wrapper
-		include ../common/header
+	//HEADER
+	header.header
+		include ../common/_navbar
+			| Say <i>Haloa</i> to your Portfolio
+	//END HEADER
+
+	//ABOUT
+	.container
+		.about
+			p.title__question
+				| Who we Are
+			h2.title
+				| Tell The World About Yourself
+			p.about--text.content-text
+				| Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc, fiant sollemnes in futurum.
+			button.btn.about__btn
+				a(href="/about.html").btn__link Read More About Us
+	//END ABOUT
+
+	//WORK
+	.work
 		.container
-			include ../common/about
-		include ../common/work
-		.container
-			include ../common/team
-			include ../common/blog
-			include ../common/contact
+			p.title__question
+				| Who we Are
+			h2.title
+				| Show Your Amazing Work
+		.work--gellary
+			- for (var i = 1; i <= 8; i++)
+				.work--gellary--img
+					img(src="/img/work__img__#{i}.png")
+	//END WORK
+
+	//TEAM
+	.container
+		.team
+			p.title__question
+				| Who we Are
+			h2.title
+				| Show Your Amazing Work
+			p.team--text.content-text
+				| Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc, fiant sollemnes in futurum.
+			ul.team--list
+				li.team--item
+					.team--item__photo
+						img(src="/img/team__photo__1.jpg" alt="Tobias Schneider")
+					.team--item__profesion.title__question ceo
+					.team--item__name Tobias Schneider
+					.team--item__about
+						| Lorem ipsum dolor sit amet, conse tetuer adi piscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.
+				li.team--item
+					.team--item__photo
+						img(src="/img/team__photo__2.jpg" alt="Jack Knife")
+					.team--item__profesion.title__question Designer
+					.team--item__name Jack Knife
+					.team--item__about
+						| Lorem ipsum dolor sit amet, conse tetuer adi piscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.
+				li.team--item
+					.team--item__photo
+						img(src="/img/team__photo__3.jpg" alt="Ricki Hall")
+					.team--item__profesion.title__question Developer
+					.team--item__name Ricki Hall
+					.team--item__about
+						| Lorem ipsum dolor sit amet, conse tetuer adi piscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.
+		//END TEAM
+
+		//BLOG
+		.blog
+			p.title__question
+				| Last Post
+			h2.title
+				| We Like to Write
+			.blog--inner
+				.blog--photo
+					img(src="/img/blog--post__photo.jpg" alt="Change Your Space")
+				.blog--post
+					.blog--post__date 14 September 2014
+					.blog--post__title Change Your Space
+					.blog--post__text
+						| Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores.
+					button.blog--post__btn.btn Read
+			button.blog--btn.btn More From Our Blog
+		//END BLOG
+
+		//CONTACT
+		.contact
+			p.title__question
+				| Contact Us
+			h2.title
+				| Work With Us
+			.contact--map
+				img(src="/img/contact__map.jpg" alt="Map")
+			.contact--list
+				.contact--list__item
+					.contact--list__title Location
+					.contact--list__content 198 West 21th Street, New York, NY 10010
+				.contact--list__item
+					.contact--list__title Phone
+					.contact--list__content
+						a(href="tel:+88 (0) 101 0000000").contact--list__link +88 (0) 101 0000000
+						a(href="tel:+88 (0) 101 0000000").contact--list__link +88 (0) 101 0000000
+				.contact--list__item
+					.contact--list__title Fax
+					.contact--list__content
+						a(href="tel:+88 (0) 201 0000000").contact--list__link +88 (0) 201 0000000
+						a(href="tel:+88 (0) 201 0000000").contact--list__link +88 (0) 201 0000000
+				.contact--list__item
+					.contact--list__title Email
+					.contact--list__content
+						a(href="mailto:elegant@elegant.com").contact--list__link elegant@elegant.com
+						a(href="mailto:commercial@elegant.com").contact--list__link commercial@elegant.com
+		//END CONTACT

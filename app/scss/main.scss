@@ -20,16 +20,15 @@
 
 /* --------- sections --------- */
 
-@import "common/header";
+@import "common/navbar";
 
-@import "common/about.sccs";
+@import "common/footer";
 
-@import "common/work";
+/* --------- pages --------- */
 
-@import "common/team";
+@import "common/index";
 
-@import "common/blog";
+@import "common/about";
 
-@import "common/contact";
 
 

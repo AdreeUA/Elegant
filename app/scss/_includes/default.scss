@@ -36,22 +36,11 @@ body {
 	min-width: 1000px;
 }
 
-.btn{
-	display: inline-block;
-	vertical-align: top;
-	width: 235px;
-	height: 57px;
-	color: #021725;
-	font-family: $font-main;
-	font-size: 14px;
-	font-weight: 300;
-	line-height: 32px;
-	border: 1px solid black;
-	background-color: transparent;
-}
+.btn{@include button }
 .btn:hover{
 	box-shadow: 0 5px 10px  rgba(0,0,0,0.5);
 }
+.btn__link{@include button-link}
 .title{
 	margin: 0 0 53px 0;
 	text-align: center;
@@ -76,25 +65,5 @@ body {
 	font-weight: 300;
 	line-height: 32px;
 }
-.footer{
-	background-color: #eee;
-	padding: 42px 0 35px;
-	color: #505d68;
-	font-size: 0;
-	font-weight: 300;
-}
-.footer--link{
-	color: #505d68;
-	text-decoration: none;
-}
-.footer--contact,
-.footer--copyright{
-	display: inline-block;
-	vertical-align: top;
-	width: 50%;
-	font-size: 16px;
-}
-.footer--contact{
-	text-align: right;
-}
+
 

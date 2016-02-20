@@ -1,0 +1,39 @@
+- var pageId = 1
+
+extends ../layouts/main_layout
+
+block title
+    title About Us | Elegant
+block content
+    //HEADER
+    header.about--header.header
+        include ../common/_navbar
+    //END HEADER
+
+
+    .container
+
+        //CONTENT
+        .about--content.content-text
+            | That's an interesting thing about design defines so much more than what products have a very minimalist way. From a designer's point of being so many ways, but very complicated the defining what products become in many of the other four parts? True simplicity. I think there is very complicated problems without letting people have always thought about the absence of design defines so much that seem to mean so much of consequence is a profound and its context. There's no other four parts? Powerpoint. Great design is to perform the way beyond the leading edge in terms of defining what we also acknowledge that it has a product that effort. Great design makes it does not the essential, so much more than the design is honest!
+        //END CONTENT
+
+    //SERVICES
+    .about--services.clearfix
+        .about--services--img
+            img(src="/img/services__img.jpg" alt='Services')
+        .about--services--content
+            .about--services--content__title Services
+            .about--services--content__text
+                | We’ll work with you to define a strong visual identity. One that communicates your values through a cohesive story and brings your business to life in print and online.
+            ul.about--services--content__list
+                li.about--services--content__item Branding
+                li.about--services--content__item Visual Identity
+                li.about--services--content__item Web & Digital Design
+                li.about--services--content__item Annual Reports
+                li.about--services--content__item Books & Brochures
+                li.about--services--content__item Programs & Editorial
+                li.about--services--content__item Creative Consultancy
+
+    //END SERVICES
+

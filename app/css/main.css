@@ -453,7 +453,6 @@ th {
 
 /* --------- mixins --------- */
 /* --------- mixins --------- */
-/* --------- flexbox --------- */
 /* --------- variables --------- */
 /* --------- fonts --------- */
 @font-face {
@@ -480,7 +479,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  font-family: OpenSans;
+  font-family: OpenSans, sans-serif;
   font-size: 18px;
   color: #021725; }
 
@@ -512,15 +511,21 @@ body {
   width: 235px;
   height: 57px;
   color: #021725;
-  font-family: OpenSans;
+  font-family: OpenSans, sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 32px;
   border: 1px solid black;
-  background-color: transparent; }
+  background-color: transparent;
+  outline: none; }
 
 .btn:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); }
+
+.btn__link {
+  color: inherit;
+  background: inherit;
+  text-decoration: none; }
 
 .title {
   margin: 0 0 53px 0;
@@ -546,33 +551,7 @@ body {
   font-weight: 300;
   line-height: 32px; }
 
-.footer {
-  background-color: #eee;
-  padding: 42px 0 35px;
-  color: #505d68;
-  font-size: 0;
-  font-weight: 300; }
-
-.footer--link {
-  color: #505d68;
-  text-decoration: none; }
-
-.footer--contact,
-.footer--copyright {
-  display: inline-block;
-  vertical-align: top;
-  width: 50%;
-  font-size: 16px; }
-
-.footer--contact {
-  text-align: right; }
-
 /* --------- sections --------- */
-.header {
-  height: 699px;
-  background: url("../../img/bg__header.jpg") no-repeat;
-  background-size: cover; }
-
 .logo--link {
   margin: 16px 48px;
   float: left;
@@ -660,9 +639,44 @@ body {
   font-size: 80px;
   font-weight: 300; }
 
+.footer {
+  background-color: #eee;
+  padding: 42px 0 35px;
+  color: #505d68;
+  font-size: 0;
+  font-weight: 300; }
+
+.footer--link {
+  color: #505d68;
+  text-decoration: none; }
+
+.footer--contact,
+.footer--copyright {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  font-size: 16px; }
+
+.footer--contact {
+  text-align: right; }
+
+/* --------- pages --------- */
+.header {
+  height: 699px;
+  background: url("../../img/bg__header.jpg") no-repeat;
+  background-size: cover; }
+
+.header--title {
+  margin: 0;
+  text-align: center;
+  padding: 303px 48px 50px;
+  color: white;
+  font-size: 80px;
+  font-weight: 300; }
+
 .header--title i {
   font-style: italic;
-  font-family: OpenSansLight; }
+  font-family: OpenSansLight, sans-serif; }
 
 .about {
   padding: 78px 0 82px 0;
@@ -808,3 +822,91 @@ body {
   display: block;
   color: #505d68;
   text-decoration: none; }
+
+.about--header {
+  background: url("../../img/bg__about--header.jpg") no-repeat;
+  position: relative; }
+
+.about--header:before {
+  content: '';
+  width: 31px;
+  height: 31px;
+  bottom: 55px;
+  left: 50%;
+  margin-left: -15px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  cursor: pointer; }
+
+.about--header:after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  bottom: 68px;
+  left: 50%;
+  margin-left: -4px;
+  border: 1px solid;
+  border-color: #fff #fff transparent transparent;
+  display: block;
+  position: absolute;
+  transform: rotate(135deg);
+  cursor: pointer; }
+
+.about--content {
+  padding: 78px 0 82px 0; }
+
+.about--services {
+  padding: 78px 0 82px 0;
+  padding-bottom: 0; }
+
+.about--services--img {
+  width: 641px;
+  height: 450px;
+  float: left; }
+
+.about--services--content {
+  width: 639px;
+  box-sizing: border-box;
+  min-height: 450px;
+  padding: 47px 57px 0 42px;
+  font-size: 18px;
+  float: right;
+  background-color: #f9f9f9; }
+
+.about--services--content__title {
+  margin-bottom: 91px;
+  color: #505d68;
+  font-size: 45px;
+  font-weight: 600; }
+
+.about--services--content__text {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 50%;
+  padding: 0 50px 0 15px;
+  color: #505d68;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px; }
+
+.about--services--content__list {
+  box-sizing: border-box;
+  margin: 0 0 0 45px;
+  display: inline-block;
+  vertical-align: bottom;
+  position: relative;
+  list-style-type: none;
+  color: #505d68;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+  padding: 0 0 0 40px; }
+
+.about--services--content__item:before {
+  content: '-';
+  position: absolute;
+  left: 18px; }
