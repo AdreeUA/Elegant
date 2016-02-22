@@ -2,11 +2,13 @@
   height: 699px;
   background: url("../../img/bg__header.jpg") no-repeat;
   background-size: cover;
+  position: relative;
 }
 .header--title{
   margin: 0;
+  position: relative;
   text-align: center;
-  padding: 303px 48px 50px;
+  padding: 303px 58px 50px;
   color: white;
   font-size: 80px;
   font-weight: 300;
@@ -87,13 +89,17 @@
 .blog--post{
   display: inline-block;
   vertical-align: top;
-  width: 50%;
   font-size: 18px;
   margin: 0;
 }
+.blog--photo{
+  width: 384px;
+  height: 390px;
+}
 .blog--post{
-  box-sizing: border-box;
-  padding: 46px 38px 60px 38px;
+  width: 308px;
+  min-height: 328px;
+  padding: 42px 38px 20px 38px;
   background-color: #f9f9f9;
 }
 .blog--post__date{
@@ -137,21 +143,20 @@
   font-size: 0;
 }
 .contact--list__item{
-  padding-top: 56px;
+  padding: 52px 71px 20px;
   font-size: 18px;
   color: #505d68;
   display: inline-block;
   vertical-align: top;
-  width: 383px;
+  width: 241px;
 }
 .contact--list__title{
-  padding: 0 20px 49px 20px;
+    margin-bottom: 49px;
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
 }
 .contact--list__content{
-  padding: 0 76px;
   margin-bottom: 46px;
   line-height: 34px;
 }
@@ -159,4 +164,129 @@
   display: block;
   color: #505d68;
   text-decoration: none;
+}
+
+
+@media all and (max-width: 750px){
+  .header {
+    height: 1337px;
+    background: url("../../img/bg__header--mob.jpg") no-repeat;
+  }
+  .header--title:before{
+    content: '';
+    width: 61px;
+    height: 61px;
+    bottom: -54px;
+    left: 50%;
+    margin-left: -30px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+  }
+  .header--title:after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    bottom: -30px;
+    left: 50%;
+    margin-left: -10px;
+    border: 1px solid;
+    border-color:  #fff #fff transparent transparent;
+    display: block;
+    position: absolute;
+    transform: rotate(135deg);
+    cursor: pointer;
+  }
+  .work--gellary--img{
+    width: 750px;
+    height: 565px;
+    margin-bottom: 5px;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  .team--item{
+    width: 680px;
+    margin-bottom: 60px;
+  }
+  .team--item__photo{
+    width: 680px;
+    height: 530px;
+  }
+  .team--item__profesion{
+    margin: 37px 30px 39px;
+  }
+  .team--item__name{
+    margin: 0 30px 67px;
+    font-size: 40px;
+  }
+  .team--item__about{
+    margin: 0 30px 90px;
+    font-size: 29px;
+    line-height: 41px;
+  }
+    .blog{
+        margin-bottom: 149px;
+    }
+  .blog--inner{
+      margin-bottom: 73px;
+  }
+  .blog--photo{
+      width: 680px;
+      height: 630px;
+  }
+  .blog--post{
+      width: 526px;
+      padding: 83px 77px;
+  }
+  .blog--post__date{
+      margin-bottom: 37px;
+      font-size: 28px;
+  }
+  .blog--post__title{
+      font-size: 60px;
+      margin-bottom: 65px;
+  }
+  .blog--post__text{
+      margin-bottom: 97px;
+      font-size: 29px;
+      line-height: 47px;
+  }
+  .blog--post__btn{
+      width: 242px;
+      height: 92px;
+  }
+    .contact--map{
+        width: 680px;
+        height: 300px;
+    }
+    .contact--list__item{
+        width: 241px;
+        padding: 89px 46px 10px;
+    }
+    .contact--list__title{
+        font-size: 28px;
+        margin-bottom: 77px;
+    }
+    .contact--list__content{
+        font-size: 30px;
+        line-height: 48px;
+        word-wrap: break-word;
+    }
+    .footer{
+        padding: 77px 0 63px;
+    }
+    .footer--contact,
+    .footer--copyright{
+        width: 100%;
+        font-size: 30px;
+        line-height: 48px;
+    }
+    .footer--contact{
+        text-align: left;
+    }
 }

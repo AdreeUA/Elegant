@@ -1,11 +1,12 @@
-.logo
-    a(href="index.html").logo--link
-nav.navbar
-    .navbar--menu#menu Menu
-        a(href="#menu").navbar--menu__link
-            span.navbar--menu__toggle
-    ul.navbar--list
-        - var menuItem = {'index': "Home", '\about': "About", '\work': "Work", '\project': "Project", '\ blog': "Blog", '\contact': "Contact"}
-        each key, val in menuItem
-            li.navbar--item
-                a(href="#{val}.html").navbar--link #{key}
+.header--nav.clearfix
+    .logo
+        a(href="index.html").logo--link
+    nav.navbar
+        .navbar--menu#menu Menu
+            a(href="#menu").navbar--menu__link
+                span.navbar--menu__toggle
+        ul.navbar--list
+            - var menuItem = {'index': "Home", '\about': "About", '\work': "Work", '\project': "Project", '\ blog': "Blog", '\contact': "Contact"}
+            each key, val in menuItem
+                li.navbar--item
+                    a(href="#{val}.html").navbar--link #{key}

@@ -8,10 +8,9 @@
 }
 .navbar {
   float: right;
+  padding: 31px 48px 0 0;
 }
 .navbar--menu {
-  margin: 48px 31px 20px 20px;
-  padding-right: 22px;
   position: relative;
   color: white;
   font-size: 16px;
@@ -46,7 +45,7 @@
   top: 3px;
 }
 .navbar--list{
-  //display: none;
+  display: none;
   position: absolute;
   top: 55px;
   right: 0;
@@ -84,4 +83,52 @@
   color: white;
   font-size: 80px;
   font-weight: 300;
+}
+
+
+@media all and (max-width: 750px){
+  .header--nav{
+    height: 113px;
+    background-color: rgba(36, 47, 53, 0.7);
+  }
+  .logo--link{
+    width: 366px;
+    height: 81px;
+    background-size: cover;
+  }
+  .navbar{
+    height: 82px;
+    background-color: rgba(36, 47, 53, 0.9);
+    font-size: 0;
+    width: 87px;
+  }
+  .navbar--menu{
+    font-size: 0;
+  }
+  .navbar--menu__toggle {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 5px;
+    top: 16px;
+    right: 26px;
+    background-color: #fff;
+  }
+  .navbar--menu__toggle:before,
+  .navbar--menu__toggle:after{
+    content: '';
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 5px;
+    right: 0;
+    background-color: #fff;
+  }
+  .navbar--menu__toggle:before{
+    top: -10px;
+  }
+  .navbar--menu__toggle:after{
+    top: 5px;
+  }
+
 }
