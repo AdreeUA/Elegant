@@ -1,0 +1,32 @@
+- var pageId = 4
+
+extends ../layouts/main_layout
+
+block title
+    title Project | Elegant
+block content
+    header.header.header__project
+        include ../common/_navbar
+    .project
+        .project--content
+            .project--title Nöra
+            .project--text
+                p
+                    | This looks. I want to complexity. That's come to testify to complexity. It's about an object, we kept going and i figured out some basic stuff that acknowledges its very minimalist way beyond the traditions of function from a clutterfree product that form and value on ideas and simplicity. What products have disconnected function of anything of the computer.
+                p
+                    | All project images by <b>Heydays</b>
+            img(src="/img/project__img__1.jpg").project--img
+            img(src="/img/project__img__2.jpg").project--img
+            img(src="/img/project__img__3.jpg").project--img
+            img(src="/img/project__img__4.jpg").project--img
+        .project--gallary
+            - for (var i = 1; i <= 6; i++)
+                .project--gellary--img
+                    img(src="/img/work__img__#{i}.png")
+    .social
+        button.btn.btn__project
+            a(href="#").btn__link Facebook
+        button.btn.btn__project
+            a(href="#").btn__link Twitter
+        button.btn.btn__project
+            a(href="#").btn__link Google+

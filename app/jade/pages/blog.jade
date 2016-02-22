@@ -1,0 +1,58 @@
+- var pageId = 4
+extends ../layouts/main_layout
+
+block title
+    title Blog | Elegant
+
+block content
+    header.header.header__blog
+        include ../common/_navbar
+    .blog
+        .nav-blog
+
+            .nav-blog--title Recent Posts
+            ul.nav-blog--list
+                li.nav-blog--item
+                    a(href="#").nav-blog--link This is the Title of Your Post
+                li.nav-blog--item
+                    a(href="#").nav-blog--link This is the Title of Your Post
+                li.nav-blog--item
+                    a(href="#").nav-blog--link This is the Title of Your Post
+                li.nav-blog--item
+                    a(href="#").nav-blog--link This is the Title of Your Post
+
+            .nav-blog--title Categories
+            ul.nav-blog--list
+                li.nav-blog--item
+                    a(href="#").nav-blog--link Art
+                li.nav-blog--item
+                    a(href="#").nav-blog--link Business
+                li.nav-blog--item
+                    a(href="#").nav-blog--link Design
+                li.nav-blog--item
+                    a(href="#").nav-blog--link Code
+
+            .nav-blog--title Projects
+            - for (var i = 1; i <= 4; i++)
+                .project--gellary--img
+                    img(src="/img/work__img__#{i}.png")
+        .post
+            .post--item
+                img(src="/img/post__img__1.jpg").post--img
+                .post--title This is the Titleof Your Post
+                .post--date 14 September 2014
+                .post--text
+                    | This looks. I want to complexity. That's come to testify to complexity. It's about an object, we kept going and i figured out some basic stuff that acknowledges its very minimalist way beyond the traditions of function from a clutterfree product that form and value on ideas and simplicity. What products have disconnected function of anything of the computer.
+                button.btn
+                    a(href="#").btn__link Read More
+            .post--item
+                img(src="/img/post__img__2.jpg").post--img
+                .post--title This is the Titleof Your Post
+                .post--date 14 September 2014
+                .post--text
+                    | This looks. I want to complexity. That's come to testify to complexity. It's about an object, we kept going and i figured out some basic stuff that acknowledges its very minimalist way beyond the traditions of function from a clutterfree product that form and value on ideas and simplicity. What products have disconnected function of anything of the computer.
+                button.btn
+                    a(href="#").btn__link Read More
+
+        button.btn.btn--blog
+            a(href="#").btn__link Load More Posts

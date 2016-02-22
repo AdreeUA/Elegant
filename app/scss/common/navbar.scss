@@ -24,7 +24,6 @@
   margin-left: 2px;
   width: 18px;
   height: 12px;
-  //margin-right: 32px;
 }
 .navbar--menu__toggle {
   position: relative;
@@ -47,7 +46,7 @@
   top: 3px;
 }
 .navbar--list{
-  display: none;
+  //display: none;
   position: absolute;
   top: 55px;
   right: 0;
@@ -68,7 +67,7 @@
 }
 .navbar--link{
   text-align: center;
-  padding: 20px;
+  padding: 17px;
   display: block;
   text-decoration: none;
   color: #021725;

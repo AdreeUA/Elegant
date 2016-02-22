@@ -1,0 +1,26 @@
+- var pageId = 5
+extends ../layouts/main_layout
+
+block title
+    title Contact | Elegant
+
+block content
+    header.header.header__contact
+        include ../common/_navbar.jade
+    .container.containet__contact-page
+            p.title__question
+                | This is it!
+            h2.title.title__contact-page
+                | Contact Us
+            .contact-page
+                .contact-page--adress
+                    | Rua Serpa Pinto, Lisbon, Portugal
+                .contact-page--img
+                    img(src="/img/contact__img.jpg" alt="Photo from our window")
+                .contact-page--text
+                    | Good design as little design as possible. Good design is to chance. My goal is making something memorable and especially the consumer. Good design is aesthetic. Care and aesthetic. Good design emphasises the consumer. It does not only functional.
+                .contact-page--phone
+                    a(href="tel:+88 (0) 101 0000 000").contact-page__link +88 (0) 101 0000 000
+                    a(href="tel:+88 (0) 101 0000 000").contact-page__link +88 (0) 101 0000 000
+                button.btn.btn__contact
+                    a(href="mailto:imdiogodantas@gmail.com").btn__link Shote us an Email
