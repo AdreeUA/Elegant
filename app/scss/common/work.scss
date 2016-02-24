@@ -3,3 +3,12 @@
 	background: url("../../img/bg__work--header.jpg") no-repeat;
 	background-size: cover;
 }
+
+@media all and (max-width: 750px){
+	.work{
+		padding-top: 241px;
+	}
+	.header__work{
+        height: 1337px;
+    }
+}

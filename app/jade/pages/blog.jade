@@ -7,7 +7,7 @@ block title
 block content
     header.header.header__blog
         include ../common/_navbar
-    .blog--page
+    .blog-page
         .nav-blog
 
             .nav-blog--title Recent Posts
@@ -34,7 +34,7 @@ block content
 
             .nav-blog--title Projects
             - for (var i = 1; i <= 4; i++)
-                .project--gellary--img
+                .blog--gellary--img
                     img(src="/img/work__img__#{i}.png")
         .post
             .post--item
@@ -43,7 +43,7 @@ block content
                 .post--date 14 September 2014
                 .post--text
                     | This looks. I want to complexity. That's come to testify to complexity. It's about an object, we kept going and i figured out some basic stuff that acknowledges its very minimalist way beyond the traditions of function from a clutterfree product that form and value on ideas and simplicity. What products have disconnected function of anything of the computer.
-                button.btn
+                button.btn.btn--post
                     a(href="#").btn__link Read More
             .post--item
                 img(src="/img/post__img__2.jpg").post--img
@@ -51,7 +51,7 @@ block content
                 .post--date 14 September 2014
                 .post--text
                     | This looks. I want to complexity. That's come to testify to complexity. It's about an object, we kept going and i figured out some basic stuff that acknowledges its very minimalist way beyond the traditions of function from a clutterfree product that form and value on ideas and simplicity. What products have disconnected function of anything of the computer.
-                button.btn
+                button.btn.btn--post
                     a(href="#").btn__link Read More
 
         button.btn.btn--blog

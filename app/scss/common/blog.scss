@@ -77,3 +77,85 @@
 .btn--blog{
     margin:auto;
 }
+
+@media all and (max-width: 750px){
+    .header__blog{
+        background: none;
+        height: 113px;
+        margin-bottom: 68px
+    }
+    .blog-page{
+        padding-left: 38px;
+        padding-right: 38px;
+        flex-direction: column-reverse;
+        background-color: inherit;
+    }
+    .btn--blog{
+        order: -1;
+        margin-bottom: 60px;
+    }
+    .btn--blog:before{
+        content:"";
+        width: 100%;
+        position: absolute;
+        height: 400px
+    }
+    .post{
+        margin: auto;
+        width: 100%; 
+        background-color: #fcfcfc;  
+    }
+    .post--item{
+        padding: 30px 57px 60px 60px;
+        margin-bottom: 120px;
+    }
+    .post--item:last-child{
+        margin-bottom: 0
+    }
+    .post--img{
+        width: 556px;
+        height: 371px;
+        margin-bottom: 61px
+    }
+    .post--title{
+        font-size: 56px;
+        line-height: 94px;
+        margin-bottom: 57px
+    }
+    .post--date{
+        font-size: 27px;
+        margin-bottom: 62px
+    }
+    .post--text{
+        font-size: 27px;
+        line-height: 61px;
+        margin-bottom: 126px
+    }
+    .btn--post{
+        width: 360px;
+        height: 91px;
+    }
+    .nav-blog{
+        width: auto;
+        padding: 185px 59px 60px;
+        background-color: #f9f9f9;
+        position: relative;
+    }
+    .nav-blog--title{
+        font-size: 43px;
+        line-height: 60px;
+        margin-bottom: 69px;
+        border-bottom: 3px solid #d3b000 ;
+    }
+    .nav-blog--link{
+        font-size: 30px;
+        line-height: 60px;
+    }
+    .nav-blog--list{
+        margin-bottom: 106px
+    }
+    .blog--gellary--img{
+        width: 555px;
+        height: 559px;
+    }
+}

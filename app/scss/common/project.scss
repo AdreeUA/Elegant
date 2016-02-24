@@ -81,3 +81,54 @@
 .btn__project:last-child{
     margin-right: 0;
 }
+
+@media all and (max-width: 750px){
+    .header__project{
+        background-size: auto 1337px;
+        background-position-x: 44%;
+    }
+    .header__project:before{
+        content: '';
+        width: 61px;
+        height: 61px;
+        bottom: 85px;
+        left: 50%;
+        margin-left: -30px;
+        background-color: transparent;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        cursor: pointer;
+    }
+    .header__project:after{
+        content: '';
+        width: 20px;
+        height: 20px;
+        bottom: 109px;
+        left: 50%;
+        margin-left: -10px;
+        border: 1px solid;
+        border-color:  #fff #fff transparent transparent;
+        display: block;
+        position: absolute;
+        transform: rotate(135deg);
+        cursor: pointer;
+    }
+    .project{
+        display: block;
+        margin: 149px 35px 32px;
+        padding: 64px 27px 29px;
+    }
+    .project--content,
+    .project--gallary{
+        width: auto;
+    }
+    .project--img{
+        width: 617px;
+        height: auto;
+    }
+    .social{
+        display: none;
+    }
+}

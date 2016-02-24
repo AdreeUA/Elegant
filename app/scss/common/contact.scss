@@ -55,3 +55,47 @@
 .btn__contact{
     margin: 77px auto 0;
 }
+
+
+@media all and (max-width: 750px){
+    .header__contact{
+        background: none;
+        height: 113px;
+    }
+    .containet__contact-page{
+        padding-top: 218px;
+        padding-bottom: 148px;
+        width: 670px;
+    }
+    .contact-page--adress{
+        width: 100%;
+        height: 100%;
+        padding: 153px 61px 116px;
+        font-size: 46px;
+        line-height: 59px;
+    }
+    .contact-page--img{
+        width: 670px;
+        height: 375px;
+    }
+    .contact-page--text{
+        width: auto;
+        height: auto;
+        padding: 69px 93px 76px;
+        font-size: 30px;
+        line-height: 47px;
+    }
+    .contact-page--phone{
+        width: 100%;
+        height: auto;
+        padding: 197px 61px 80px;
+        
+    }
+    .contact-page__link{
+        font-size: 46px;
+        line-height: 59px;
+    }
+    .btn__contact{
+        margin-top: 150px;
+    }
+}
